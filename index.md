@@ -7,7 +7,7 @@ It was predicted with 17% confidence by the [2019 STAP Report](https://climatech
 
 <iframe src="Atlantic_City_Parcel_Census_BG.pdf" width = "1000" height = "1000"></iframe><br/>
 
-<iframe src="Atlantic_City_5ft_SLR.html" width = "1000" height = "900"></iframe><br/>
+<iframe src="Atlantic_City_5ft_SLR.html" width = "1000" height = "902"></iframe><br/>
 
 You can also explore [this map as its own web page here](Atlantic_City_5ft_SLR.html)
 
