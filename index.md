@@ -9,5 +9,22 @@ It was predicted with 17% confidence by the [2019 STAP Report](https://climatech
 
 You can also explore [this map as its own web page here](Atlantic_City_5ft_SLR.html)
 
-<iframe src="Final_Project_Description_JD.docx" width = "1000" height = "1000"></iframe><br/>
+### Notes:
+
+From National Historical Geographic Information System, I used the Shoreline-Clipped Block Group shapefile provided earlier in this class. From the New Jersey Geographic Information Network, I used Municipal Boundaries of NJ, School Point Locations of NJ, Hospitals in NJ, as well as the most current Parcels and MOD-IV Composite of NJ, which includes 2022 tax data. For Census data, I used the US Census API to access 2019 ACS Census Block Group Total Population and Median Household Income data for Atlantic County. For long-term care facilities (LTCF), I used the Long-Term Care Facilities of New Jersey geojson provided earlier in this class. To represent 5ft SLR, I used a 5ft Total Water Level (TWL) dataset I created for the NJAES Office of Research Analytics, where I currently work.
+Because of the size of the Parcels and MOD-IV Composite dataset, I clipped it to Atlantic City in ArcPro before reading it in. For the 5ft TWL datasets, I dissolved all polygons and clipped them to both Atlantic County and Atlantic City before reading them in.
+
+To create the Census and Parcel Data by Block Group geodataframe (ac_parcel_mod4_5ftTWL_bg), I first merged the Atlantic County Census data with the Atlantic City block group geometry, which effectively clipped it to Atlantic City. I then spatially joined the Parcel dataset with the block group geometry so I could determine which block group each parcel was within. Next, I spatially joined the parcel block group geodatframe with the 5ft TWL geometry, to determine which parcels intersected the flood zone. Then I grouped and aggregated the total number of parcels and total net assessed value as well as the number of intersecting parcels, and the net assessed value of these parcels by block group. From these fields, I calculated the percent of parcels and the percent of net assessed value that were vulnerable to 5ft SLR by block group. Last, I merged the parcel data by block group geodataframe with the Census data by block group geodataframe.
+To create the critical infrastructure layer, I concatenated the hospitals, schools, and LTCF datasets. To do this I had to change the names of some columns so they matched.
+
+I spatially joined the parcel and critical infrastructure geodataframes with the 5ft TWL level geodataframe to determine which parcels and sites intersected it. This is not an accurate way to determine inundation for parcels, because it does not show how much of each parcel intersects with the flood zone, but I was not sure how to run Zonal Statistics or a similar process in GeoPandas. I tried to adjust for this by referring to intersecting parcels as “vulnerable” as opposed to “inundated.” I used the Atlantic City 5ft TWL for spatial joins because it was smaller in size, but the Atlantic County 5ft TWL level for the interactive map, so the flood zone did not end awkwardly at the municipal boundary. 
+
+For the first static map, I chose to simply visualize the parcels and the critical infrastructure points in relation to the flood zone to introduce the subject matter. It does not provide any detailed information. For the second static map I chose to show the choropleth maps I initially wanted to include in the interactive map. I chose not to include them in the interactive map because I didn’t like the way the choropleth legends looked, or their position, and I could not figure out how to change either. I compromised by including them in their own map and including their data in the pop-ups of the interactive map. The interactive map includes all the data processed for the entire project. I did not include a parcel layer to keep the size of the file small enough to upload to GitHub.
+
+Data sources:
+2019 STAP report: https://climatechange.rutgers.edu/resources/climate-change-and-new-jersey/nj-sea-level-rise-reports
+Municipal Boundaries of NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/1c6b26a9a14e4132895194e80d6b30f8_0/explore
+School Point Locations of NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/d8223610010a4c3887cfb88b904545ff/explore
+Hospitals in NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/newjersey::hospitals-in-nj/explore
+Parcels and MOD-IV Composite of NJ: https://njogis-newjersey.opendata.arcgis.com/documents/406cf6860390467d9f328ed19daa359d/about
 
