@@ -21,9 +21,9 @@ The parcel and critical infrastructure geodataframes were spatially joined with 
 The first static map simply visualizes the parcels and the critical infrastructure points in relation to the flood zone, to introduce the subject matter. It does not provide any detailed information. The second static map shows choropleth maps that were initially to be included in the interactive map. They were not included in the interactive map because the choropleth legends overlapped with other map elements. The compromise was to include them in their own map and include their data in the pop-ups of the interactive map. The interactive map includes all the data processed for the entire project. The parcel layer was not included to keep the size of the file small enough to upload to GitHub.
 
 Data sources:
-2019 STAP report: https://climatechange.rutgers.edu/resources/climate-change-and-new-jersey/nj-sea-level-rise-reports<br/>
-Municipal Boundaries of NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/1c6b26a9a14e4132895194e80d6b30f8_0/explore<br/>
-School Point Locations of NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/d8223610010a4c3887cfb88b904545ff/explore<br/>
-Hospitals in NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/newjersey::hospitals-in-nj/explore<br/>
-Parcels and MOD-IV Composite of NJ: https://njogis-newjersey.opendata.arcgis.com/documents/406cf6860390467d9f328ed19daa359d/about<br/>
+2019 STAP report: [https://climatechange.rutgers.edu/resources/climate-change-and-new-jersey/nj-sea-level-rise-reports](https://climatechange.rutgers.edu/resources/climate-change-and-new-jersey/nj-sea-level-rise-reports)<br/>
+Municipal Boundaries of NJ: [https://njogis-newjersey.opendata.arcgis.com/datasets/1c6b26a9a14e4132895194e80d6b30f8_0/explore](https://njogis-newjersey.opendata.arcgis.com/datasets/1c6b26a9a14e4132895194e80d6b30f8_0/explore)<br/>
+School Point Locations of NJ: [https://njogis-newjersey.opendata.arcgis.com/datasets/d8223610010a4c3887cfb88b904545ff/explore](https://njogis-newjersey.opendata.arcgis.com/datasets/d8223610010a4c3887cfb88b904545ff/explore)<br/>
+Hospitals in NJ: [https://njogis-newjersey.opendata.arcgis.com/datasets/newjersey::hospitals-in-nj/explore](https://njogis-newjersey.opendata.arcgis.com/datasets/newjersey::hospitals-in-nj/explore)<br/>
+Parcels and MOD-IV Composite of NJ: [https://njogis-newjersey.opendata.arcgis.com/documents/406cf6860390467d9f328ed19daa359d/about](https://njogis-newjersey.opendata.arcgis.com/documents/406cf6860390467d9f328ed19daa359d/about)<br/>
 
