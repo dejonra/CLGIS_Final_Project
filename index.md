@@ -22,9 +22,9 @@ I spatially joined the parcel and critical infrastructure geodataframes with the
 For the first static map, I chose to simply visualize the parcels and the critical infrastructure points in relation to the flood zone to introduce the subject matter. It does not provide any detailed information. For the second static map I chose to show the choropleth maps I initially wanted to include in the interactive map. I chose not to include them in the interactive map because I didn’t like the way the choropleth legends looked, or their position, and I could not figure out how to change either. I compromised by including them in their own map and including their data in the pop-ups of the interactive map. The interactive map includes all the data processed for the entire project. I did not include a parcel layer to keep the size of the file small enough to upload to GitHub.
 
 Data sources:
-2019 STAP report: https://climatechange.rutgers.edu/resources/climate-change-and-new-jersey/nj-sea-level-rise-reports
-Municipal Boundaries of NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/1c6b26a9a14e4132895194e80d6b30f8_0/explore
-School Point Locations of NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/d8223610010a4c3887cfb88b904545ff/explore
-Hospitals in NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/newjersey::hospitals-in-nj/explore
-Parcels and MOD-IV Composite of NJ: https://njogis-newjersey.opendata.arcgis.com/documents/406cf6860390467d9f328ed19daa359d/about
+2019 STAP report: https://climatechange.rutgers.edu/resources/climate-change-and-new-jersey/nj-sea-level-rise-reports<br/>
+Municipal Boundaries of NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/1c6b26a9a14e4132895194e80d6b30f8_0/explore<br/>
+School Point Locations of NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/d8223610010a4c3887cfb88b904545ff/explore<br/>
+Hospitals in NJ: https://njogis-newjersey.opendata.arcgis.com/datasets/newjersey::hospitals-in-nj/explore<br/>
+Parcels and MOD-IV Composite of NJ: https://njogis-newjersey.opendata.arcgis.com/documents/406cf6860390467d9f328ed19daa359d/about<br/>
 
